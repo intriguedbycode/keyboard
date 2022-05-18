@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgb(95, 93, 93);
+  box-shadow: 0 0 50px rgb(0, 0, 0, 0.5);
+  user-select: none;
+  transition: bottom 0.5s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.keyboard-hidden {
+  bottom: -100%;
+}
+
+.keyboard-keys {
+  text-align: center;
+}
+
+.keyboard-key {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  position: relative;
+}
+
+.keyboard-key-wide {
+  width: 12%;
+}
+
+.keyboard-key-xtra-wide {
+  width: 36%;
+  max-width: 500px;
+}
+
+.keyboard-key-activatable::after {
+  content: "";
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.keyboard-key-active::after {
+  background-color: #08ff00;
+}
+
+.keyboard-key-dark {
+  background-color: rgb(0, 0, 0, 0.25);
+}
+
+button:active {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* .use-virtual-input:focus {
+  background-color: aqua;
+} */
+
+/* .type-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+textarea {
+  display: block;
+  width: 100%;
+  background-color: beige;
+}
+
+body {
+  background-image: url("./coffee-background.jpg");
 }
