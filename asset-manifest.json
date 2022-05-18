@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/keyboard/static/css/main.2b9ba18a.css",
+    "main.js": "/keyboard/static/js/main.0631c9eb.js",
+    "static/media/coffee-background.jpg": "/keyboard/static/media/coffee-background.d58509f4adf12899d9b8.jpg",
+    "index.html": "/keyboard/index.html",
+    "main.2b9ba18a.css.map": "/keyboard/static/css/main.2b9ba18a.css.map",
+    "main.0631c9eb.js.map": "/keyboard/static/js/main.0631c9eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b9ba18a.css",
+    "static/js/main.0631c9eb.js"
+  ]
+}
